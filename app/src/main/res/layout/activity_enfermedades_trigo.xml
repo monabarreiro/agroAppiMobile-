@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#CDDC39"
+    tools:context=".Enfermedades_Trigo">
+
+    <ImageView
+        android:id="@+id/imageViewTrigo"
+        android:layout_width="188dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        android:background="@mipmap/ic_trigo_foreground" />
+
+    <TextView
+        android:id="@+id/enfermedades_Trigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="516dp"
+        android:backgroundTint="#FFEB3B"
+        android:backgroundTintMode="add"
+        android:text="@string/enfermedades_trigo"
+        android:textAlignment="center"
+        android:textColorHighlight="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAmain"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#673AB7"
+        android:text="@string/volver_a_cultivos2"
+        android:textColor="#F8F5F5"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:strokeColor="#673AB7"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnAuva"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#673AB7"
+        android:text="@string/ir_hacia_uva"
+        android:textColor="#F6F3F3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:strokeColor="#673AB7"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btncarboncub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/carb_n_cubierto_o_caries"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#F8F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enfermedades_Trigo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnvolador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/carb_n_volador"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#F8F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncarboncub" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnesnegra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/espiga_negra"
+        android:textColor="#101010"
+        android:textColorHint="#F8F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvolador" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnfalsa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/falsa_mancha_ocular"
+        android:textColor="#050505"
+        android:textColorHint="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnesnegra" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnamarilla"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/mancha_amarilla"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#F8F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfalsa" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnfusariosis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/button_trigo"
+        android:text="@string/fusariosis"
+        android:textColor="#070707"
+        android:textColorHint="#F8F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfalsa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
